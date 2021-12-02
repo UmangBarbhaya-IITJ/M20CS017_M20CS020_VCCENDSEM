@@ -43,8 +43,7 @@ After loading ```https://localhost:8888```, a page saying “Get Started” is o
 11. Use the docker command to get the IP address of the InfluxDB container.
 ```docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' {containerID}```
 Replace {containerID} with the containerID of InfluxDB container.
-### Steps:
-1. Take root access by the command:```sudo -i ```
+### Steps:1. Take root access by the command:```sudo -i ```
 ![1](https://user-images.githubusercontent.com/73814573/144500642-ea60f50b-6fdd-4589-a3a7-f927d1ae733b.png)
 2. Change the directory to the folder
 ```cd /home/umang/Desktop/M20CS017_M20CS020_VCCENDSEM/```
@@ -89,9 +88,10 @@ Output is shown as
 6. Reboot
 7. Go to link https://192.168.56.100:8000 in your host browser
 ##### Create New connection with password protection
-1. Modify the connection URL and add username and password for protection 
+
+1. Modify the connection URL and add username and password for protection.
 ![8](https://user-images.githubusercontent.com/73814573/144505925-ac539ac9-6fbc-4735-abf5-ee82fcabc8d1.png)
-2. Create the system dashboard
+2. Create the system dashboard.
 ![9](https://user-images.githubusercontent.com/73814573/144501752-150572ec-764d-4cc5-b0aa-249ea9885987.png)
 3. Add a Kapacitor connection with username and password
 ![10](https://user-images.githubusercontent.com/73814573/144501751-8fa4e0cd-e6ff-4e1e-9e1c-d17b6b57e330.png)
