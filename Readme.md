@@ -70,7 +70,7 @@ Output is shown as:
 ```openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout umangkey.pem -out dipinticertificate.pem```
 4. ```cd ..```
 5. ```chmod -R 777 certificate```
-Output is shown as
+Output is shown as:
 ![4](https://user-images.githubusercontent.com/73814573/144501771-be935cd5-b857-4ef7-b799-014e64103338.png)
 6. Add the 3 lines in the docker-compose.yaml file which was removed above
 *environment:*
