@@ -46,30 +46,31 @@ Replace {containerID} with the containerID of InfluxDB container
 
 ### Steps:
 1. Take root access by the command:
-```sudo -i ```
+      ```sudo -i ```
 ![1](https://user-images.githubusercontent.com/73814573/144500642-ea60f50b-6fdd-4589-a3a7-f927d1ae733b.png)
 2. Change the directory to the folder
-```cd /home/umang/Desktop/M20CS017_M20CS020_VCCENDSEM/```
+      ```cd /home/umang/Desktop/M20CS017_M20CS020_VCCENDSEM/```
 3. Copy the docker-compose.yaml and remove the below 3 lines from the file 
 *environment:*
       *- TLS_CERTIFICATE=/mycertis/dipinticertificate.pem*
       *- TLS_PRIVATE_KEY=/mycertis/umangkey.pem*
 4. Create multiple containers:
-```docker-compose up -d --build```
+      ```docker-compose up -d --build```
 output is shown as:
 ![2](https://user-images.githubusercontent.com/73814573/144501284-71b3f85a-e63d-4f67-b121-bff33231594e.png)
 5. Go to link http://192.168.56.100:8000 in your host browser and Now the Tick stack platform will be opened and we can now create the influxdb creation
 Output is shown as:
 ![3](https://user-images.githubusercontent.com/73814573/144501906-8c0e77e0-873d-4153-8a6d-b1f8f0661288.png)
+
 ##### Now providing the https security
 1. create a directory for certificate
-```mkdir certificate```
+      ```mkdir certificate```
 2. Change directory to certificate
-```cd certificate```
+      ```cd certificate```
 3.  Since we are not using any public domain we need to create the self-generated certificates which are done using the above command. It gives us a certificate and key file
-```openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout umangkey.pem -out dipinticertificate.pem```
-4. ```cd ..```
-5. ```chmod -R 777 certificate```
+      ```openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout umangkey.pem -out dipinticertificate.pem```
+4.     ```cd ..```
+5.     ```chmod -R 777 certificate```
 Output is shown as:
 ![4](https://user-images.githubusercontent.com/73814573/144501771-be935cd5-b857-4ef7-b799-014e64103338.png)
 6. Add the 3 lines in the docker-compose.yaml file which was removed above
