@@ -85,18 +85,18 @@ Output is shown as
 *environment:*
      *- TLS_CERTIFICATE=/mycertis/dipinticertificate.pem*
       *- TLS_PRIVATE_KEY=/mycertis/umangkey.pem*
-
+![5](https://user-images.githubusercontent.com/73814573/144501768-2de84901-759d-4703-bea2-44cad83daa90.png)
 7. ``` docker-compose down```
 8.  ```docker-compose up -d --build```
 9.  Go to link https://192.168.56.100:8000 in your host browser, now you can see the ssl security has been added.
-![5](https://user-images.githubusercontent.com/73814573/144501768-2de84901-759d-4703-bea2-44cad83daa90.png)
+![6](https://user-images.githubusercontent.com/73814573/144501765-a267c100-b894-4007-8b4a-d835e928d1f5.png)
 ##### Data connection with kapacitor using telegraf.conf file
 1. ```docker exec -it telegraf /bin/bash```
 2. ```apt update```
 3. ```apt install nano```
 4. ```nano /etc/telegraf/telegraf.conf```
 5. Uncomment and update the lines 
-![6](https://user-images.githubusercontent.com/73814573/144501765-a267c100-b894-4007-8b4a-d835e928d1f5.png)
+![7](https://user-images.githubusercontent.com/73814573/144502343-adcf01e4-e3b6-4114-91a6-791e2ce48f07.png)
 6. Reboot
 7. Go to link https://192.168.56.100:8000 in your host browser
 ![7](https://user-images.githubusercontent.com/73814573/144502343-adcf01e4-e3b6-4114-91a6-791e2ce48f07.png)
