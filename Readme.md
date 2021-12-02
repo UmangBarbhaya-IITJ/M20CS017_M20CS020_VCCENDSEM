@@ -132,7 +132,6 @@ Output is shown as
 5. Select the filter Fields and save it. We have selected it as usage_idle, if CPU is idle more than 99% it will pop up the alert
 ![17](https://user-images.githubusercontent.com/73814573/144501785-bfe6011d-3fa3-452b-aaaf-d89b58438169.png)
 6. Check the alert history to find the alert raised which can be used as an added security measure
-
 ![18](https://user-images.githubusercontent.com/73814573/144501782-8c7e0a54-f9d2-43cd-acc1-378b7cde5f85.png)
 
  
