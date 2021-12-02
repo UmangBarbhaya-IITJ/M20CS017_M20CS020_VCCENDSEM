@@ -42,8 +42,11 @@ After loading ```https://localhost:8888```, a page saying “Get Started” is o
 10. Create a new username and password
 11. Use the docker command to get the IP address of the InfluxDB container.
 ```docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' {containerID}```
-Replace {containerID} with the containerID of InfluxDB container.
-### Steps:1. Take root access by the command:```sudo -i ```
+Replace {containerID} with the containerID of InfluxDB container
+
+### Steps:
+1. Take root access by the command:
+```sudo -i ```
 ![1](https://user-images.githubusercontent.com/73814573/144500642-ea60f50b-6fdd-4589-a3a7-f927d1ae733b.png)
 2. Change the directory to the folder
 ```cd /home/umang/Desktop/M20CS017_M20CS020_VCCENDSEM/```
