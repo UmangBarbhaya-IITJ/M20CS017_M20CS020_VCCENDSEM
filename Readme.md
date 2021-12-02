@@ -65,7 +65,11 @@ Output is shown as:
       *- TLS_PRIVATE_KEY=/mycertis/umangkey.pem*
 4. Create multiple containers:
 ```docker-compose up -d --build```
+output is shown as:
+![2](https://user-images.githubusercontent.com/73814573/144501284-71b3f85a-e63d-4f67-b121-bff33231594e.png)
 5. Go to link http://192.168.56.100:8000 in your host browser and Now the Tick stack platform will be opened and we can now create the influxdb creation
+Output is shown as:
+![3](https://user-images.githubusercontent.com/73814573/144501906-8c0e77e0-873d-4153-8a6d-b1f8f0661288.png)
 ##### Now providing the https security
 1. create a directory for certificate
 ```mkdir certificate```
@@ -75,36 +79,51 @@ Output is shown as:
 ```openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout umangkey.pem -out dipinticertificate.pem```
 4. ```cd ..```
 5. ```chmod -R 777 certificate```
+Output is shown as
+![3](https://user-images.githubusercontent.com/73814573/144501906-8c0e77e0-873d-4153-8a6d-b1f8f0661288.png)
 6. Add the 3 lines in the docker-compose.yaml file which was removed above
 *environment:*
      *- TLS_CERTIFICATE=/mycertis/dipinticertificate.pem*
       *- TLS_PRIVATE_KEY=/mycertis/umangkey.pem*
-
+![4](https://user-images.githubusercontent.com/73814573/144501771-be935cd5-b857-4ef7-b799-014e64103338.png)
 7. ``` docker-compose down```
 8.  ```docker-compose up -d --build```
 9.  Go to link https://192.168.56.100:8000 in your host browser, now you can see the ssl security has been added.
+![5](https://user-images.githubusercontent.com/73814573/144501768-2de84901-759d-4703-bea2-44cad83daa90.png)
 ##### Data connection with kapacitor using telegraf.conf file
 1. ```docker exec -it telegraf /bin/bash```
 2. ```apt update```
 3. ```apt install nano```
 4. ```nano /etc/telegraf/telegraf.conf```
 5. Uncomment and update the lines 
+![6](https://user-images.githubusercontent.com/73814573/144501765-a267c100-b894-4007-8b4a-d835e928d1f5.png)
 6. Reboot
 7. Go to link https://192.168.56.100:8000 in your host browser
 ##### Create New connection with password protection
-1. Modify the connection URL and add username and password for protection
+1. Modify the connection URL and add username and password for protection 
+![7](https://user-images.githubusercontent.com/73814573/144502343-adcf01e4-e3b6-4114-91a6-791e2ce48f07.png)
 2. Create the system dashboard
+![8](https://user-images.githubusercontent.com/73814573/144501756-62a5f3cb-5787-4289-aa41-b6c6c8ca6cd8.png)
 3. Add a Kapacitor connection with username and password
+![9](https://user-images.githubusercontent.com/73814573/144501752-150572ec-764d-4cc5-b0aa-249ea9885987.png)
 4. New InfluxDB Connection is created
+![10](https://user-images.githubusercontent.com/73814573/144501751-8fa4e0cd-e6ff-4e1e-9e1c-d17b6b57e330.png)
 5. We can see new host in the host list
+![10](https://user-images.githubusercontent.com/73814573/144501751-8fa4e0cd-e6ff-4e1e-9e1c-d17b6b57e330.png)
 6. Visualizing various parameters of the TICK stack host
+![11](https://user-images.githubusercontent.com/73814573/144502732-d3a80d0b-7286-447e-a4fb-b25713fbf152.png)
 ##### Creating the alert
 1. Go on the left bar for creating alert and select alert symbol and then click on manage Alert
 2. Now click on the build alert rule on top right
+![12](https://user-images.githubusercontent.com/73814573/144501747-73e1e12c-e055-4f32-83e1-eb7037bee72c.png)
 3. Name the alert
+![13](https://user-images.githubusercontent.com/73814573/144503023-824bca2b-04a4-4e85-befe-5bcedd14bf1a.png)
 4. Select the condition and its value
+![14](https://user-images.githubusercontent.com/73814573/144501791-71230c26-0386-4f45-bfa6-64a9b1fc0b8e.png)
 5. Select the filter Fields and save it. We have selected it as usage_idle, if CPU is idle more than 99% it will pop up the alert
+![15](https://user-images.githubusercontent.com/73814573/144501789-c828245f-27a5-4a77-bd44-c095984c0648.png)
 6. Check the alert history to find the alert raised which can be used as an added security measure
+![16](https://user-images.githubusercontent.com/73814573/144501786-69b5b37d-ee74-4f2c-bf50-ec57c2a98ea8.png)
 
 
 
