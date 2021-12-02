@@ -99,33 +99,42 @@ Output is shown as
 ![7](https://user-images.githubusercontent.com/73814573/144502343-adcf01e4-e3b6-4114-91a6-791e2ce48f07.png)
 6. Reboot
 7. Go to link https://192.168.56.100:8000 in your host browser
-![7](https://user-images.githubusercontent.com/73814573/144502343-adcf01e4-e3b6-4114-91a6-791e2ce48f07.png)
+
 ##### Create New connection with password protection
 1. Modify the connection URL and add username and password for protection 
-![9](https://user-images.githubusercontent.com/73814573/144501752-150572ec-764d-4cc5-b0aa-249ea9885987.png)
+![8](https://user-images.githubusercontent.com/73814573/144505925-ac539ac9-6fbc-4735-abf5-ee82fcabc8d1.png)
+
 2. Create the system dashboard
-![10](https://user-images.githubusercontent.com/73814573/144501751-8fa4e0cd-e6ff-4e1e-9e1c-d17b6b57e330.png)
+![9](https://user-images.githubusercontent.com/73814573/144501752-150572ec-764d-4cc5-b0aa-249ea9885987.png)
+
 3. Add a Kapacitor connection with username and password
-![11](https://user-images.githubusercontent.com/73814573/144502732-d3a80d0b-7286-447e-a4fb-b25713fbf152.png)
+ ![10](https://user-images.githubusercontent.com/73814573/144501751-8fa4e0cd-e6ff-4e1e-9e1c-d17b6b57e330.png)
+
 4. New InfluxDB Connection is created
-![12](https://user-images.githubusercontent.com/73814573/144501747-73e1e12c-e055-4f32-83e1-eb7037bee72c.png)
+ ![11](https://user-images.githubusercontent.com/73814573/144502732-d3a80d0b-7286-447e-a4fb-b25713fbf152.png)
+
 5. We can see new host in the host list
-![13](https://user-images.githubusercontent.com/73814573/144504878-785c2de3-03da-4fed-8c42-563b40598ee2.png)
+![12](https://user-images.githubusercontent.com/73814573/144501747-73e1e12c-e055-4f32-83e1-eb7037bee72c.png)
+
 6. Visualizing various parameters of the TICK stack host
-![14](https://user-images.githubusercontent.com/73814573/144501791-71230c26-0386-4f45-bfa6-64a9b1fc0b8e.png)
+![13](https://user-images.githubusercontent.com/73814573/144504878-785c2de3-03da-4fed-8c42-563b40598ee2.png)
+
 ##### Creating the alert
 1. Go on the left bar for creating alert and select alert symbol and then click on manage Alert
 2. Now click on the build alert rule on top right
-![15](https://user-images.githubusercontent.com/73814573/144501789-c828245f-27a5-4a77-bd44-c095984c0648.png)
+ ![14](https://user-images.githubusercontent.com/73814573/144501791-71230c26-0386-4f45-bfa6-64a9b1fc0b8e.png)
+
 3. Name the alert
-![16](https://user-images.githubusercontent.com/73814573/144501786-69b5b37d-ee74-4f2c-bf50-ec57c2a98ea8.png)
+![15](https://user-images.githubusercontent.com/73814573/144501789-c828245f-27a5-4a77-bd44-c095984c0648.png)
+
 
 4. Select the condition and its value
-![17](https://user-images.githubusercontent.com/73814573/144501785-bfe6011d-3fa3-452b-aaaf-d89b58438169.png)
-5. Select the filter Fields and save it. We have selected it as usage_idle, if CPU is idle more than 99% it will pop up the alert
+![16](https://user-images.githubusercontent.com/73814573/144501786-69b5b37d-ee74-4f2c-bf50-ec57c2a98ea8.png)
 
+5. Select the filter Fields and save it. We have selected it as usage_idle, if CPU is idle more than 99% it will pop up the alert
+![17](https://user-images.githubusercontent.com/73814573/144501785-bfe6011d-3fa3-452b-aaaf-d89b58438169.png)
 6. Check the alert history to find the alert raised which can be used as an added security measure
 
-
+![18](https://user-images.githubusercontent.com/73814573/144501782-8c7e0a54-f9d2-43cd-acc1-378b7cde5f85.png)
 
  
