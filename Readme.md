@@ -110,9 +110,9 @@ Output is shown as
 4. New InfluxDB Connection is created
 ![12](https://user-images.githubusercontent.com/73814573/144501747-73e1e12c-e055-4f32-83e1-eb7037bee72c.png)
 5. We can see new host in the host list
-![14](https://user-images.githubusercontent.com/73814573/144501791-71230c26-0386-4f45-bfa6-64a9b1fc0b8e.png)
+![13](https://user-images.githubusercontent.com/73814573/144504878-785c2de3-03da-4fed-8c42-563b40598ee2.png)
 6. Visualizing various parameters of the TICK stack host
-
+![14](https://user-images.githubusercontent.com/73814573/144501791-71230c26-0386-4f45-bfa6-64a9b1fc0b8e.png)
 ##### Creating the alert
 1. Go on the left bar for creating alert and select alert symbol and then click on manage Alert
 2. Now click on the build alert rule on top right
